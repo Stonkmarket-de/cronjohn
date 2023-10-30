@@ -1,3 +1,4 @@
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 # Cron John Silver 🏴‍☠️ 
 
 Inspired by [Cronitor](https://cronitor.io) but I just like python 🐍 more...and booty.
