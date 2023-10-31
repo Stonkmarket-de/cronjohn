@@ -1,0 +1,12 @@
+# Define your URLs
+urls:
+  - json://localhost
+  - xml://localhost
+  - discord://avatar@webhook_id/webhook_token
+  - msteams://TokenA/TokenB/TokenC/
+  - pover://user@token/DEVICE
+  - tgram://bottoken/ChatID1/ChatID2/ChatIDN
+
+  - mailto://george:password@gmail.com:
+      - to: jason@hotmail.com
+      - to: fred@live.com
