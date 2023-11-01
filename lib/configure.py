@@ -3,6 +3,8 @@ import re
 import sys
 from models import Line
 import os
+import croniter
+from datetime import datetime
 
 
 def is_root():
@@ -132,6 +134,12 @@ def get_crontab():
                         ):
                             new_cron.code = command[2]
                             new_cron.command_to_run = command[3:]
+
+                            if croniter.is_valid(new_cron.cron_expression):
+                                iter = croniter(
+                                    new_cron.cron_expression, datetime.now()
+                                )
+                                new_cron.next_runs = iter.get_next(datetime)
 
                     crons.append(new_cron)
 

@@ -10,6 +10,7 @@ class Line:
         code=None,
         run_as=None,
         mon=None,
+        next_runs=None,
     ):
         self.tz_name = tz_name
         self.name = name
@@ -20,6 +21,7 @@ class Line:
         self.code = code
         self.run_as = run_as
         self.mon = mon
+        self.next_runs = next_runs
 
     def __str__(self):
         return (
